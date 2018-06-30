@@ -1,0 +1,15 @@
+django==1.11
+django-cms==3.5.2
+django-filer
+djangocms-text-ckeditor
+
+djangocms-link
+djangocms-file
+djangocms-picture
+djangocms-video
+djangocms-googlemap
+djangocms-snippet
+djangocms-style
+djangocms-column
+
+aldryn-bootstrap3
