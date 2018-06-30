@@ -138,7 +138,8 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'sloppysun'
+    'sloppysun',
+    'aldryn_bootstrap3',
 )
 
 LANGUAGES = (
