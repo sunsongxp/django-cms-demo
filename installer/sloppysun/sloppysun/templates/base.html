@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     {% render_block "css" %}
+    {% render_block "js" %}
     <script src="{% static 'js/require.min.js' %}"></script>
     <script>
       requirejs.config({
@@ -41,10 +42,10 @@
   </head>
   <body class="">
     {% cms_toolbar %}
+    <ul class="nav">
+      {% show_menu 0 100 100 100 %}
+    </ul>
     <div class="page">
-      <ul class="nav">
-        {% show_menu 0 100 100 100 %}
-      </ul>
       <div class="page-main">
         <div class="header py-4">
           <div class="container">
@@ -216,6 +217,5 @@
         </div>
       </footer>
     </div>
-    {% render_block "js" %}
   </body>
 </html>

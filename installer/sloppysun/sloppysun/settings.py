@@ -1,4 +1,5 @@
 import os  # isort:skip
+from django.utils.translation import ugettext_lazy as _
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -139,7 +140,23 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'sloppysun',
-    'aldryn_bootstrap3',
+    #'aldryn_bootstrap3',
+    'djangocms_icon',
+    'djangocms_bootstrap4',
+    'djangocms_bootstrap4.contrib.bootstrap4_alerts',
+    'djangocms_bootstrap4.contrib.bootstrap4_badge',
+    'djangocms_bootstrap4.contrib.bootstrap4_card',
+    'djangocms_bootstrap4.contrib.bootstrap4_carousel',
+    'djangocms_bootstrap4.contrib.bootstrap4_collapse',
+    'djangocms_bootstrap4.contrib.bootstrap4_content',
+    'djangocms_bootstrap4.contrib.bootstrap4_grid',
+    'djangocms_bootstrap4.contrib.bootstrap4_jumbotron',
+    'djangocms_bootstrap4.contrib.bootstrap4_link',
+    'djangocms_bootstrap4.contrib.bootstrap4_listgroup',
+    'djangocms_bootstrap4.contrib.bootstrap4_media',
+    'djangocms_bootstrap4.contrib.bootstrap4_picture',
+    'djangocms_bootstrap4.contrib.bootstrap4_tabs',
+    'djangocms_bootstrap4.contrib.bootstrap4_utilities',
 )
 
 LANGUAGES = (
@@ -197,4 +214,37 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.autocrop',
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
+)
+
+
+DJANGOCMS_BOOTSTRAP4_TAG_CHOICES = ['div', 'section', 'article', 'header', 'footer', 'aside']
+
+DJANGOCMS_BOOTSTRAP4_CAROUSEL_TEMPLATES = (
+    ('default', _('Default')),
+)
+
+DJANGOCMS_BOOTSTRAP4_GRID_SIZE = 12
+DJANGOCMS_BOOTSTRAP4_GRID_CONTAINERS = (
+    ('container', _('Container')),
+    ('container-fluid', _('Fluid container')),
+)
+DJANGOCMS_BOOTSTRAP4_GRID_COLUMN_CHOICES = (
+    ('col', _('Column')),
+    ('w-100', _('Break')),
+    ('', _('Empty'))
+)
+
+DJANGOCMS_BOOTSTRAP4_USE_ICONS = True
+
+DJANGOCMS_BOOTSTRAP4_TAB_TEMPLATES = (
+    ('default', _('Default')),
+)
+
+DJANGOCMS_BOOTSTRAP4_SPACER_SIZES = (
+    ('0', '* 0'),
+    ('1', '* .25'),
+    ('2', '* .5'),
+    ('3', '* 1'),
+    ('4', '* 1.5'),
+    ('5', '* 3'),
 )

@@ -13,3 +13,4 @@ djangocms-style
 djangocms-column
 
 aldryn-bootstrap3
+djangocms-bootstrap4

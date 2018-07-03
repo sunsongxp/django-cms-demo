@@ -1,1 +1,2 @@
 djangocms-installer
+aldryn_style
